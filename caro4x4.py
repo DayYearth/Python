@@ -38,7 +38,7 @@ class caro4x4:
             self.window.destroy()
 
     def check_winner(self):
-        for i in range(4):
+        for i in range(3):
             if self.board[i][0] == self.board[i][1] == self.board[i][2] == self.board[i][3] != '':
                 return self.board[i][0]
             if self.board[0][i] == self.board[1][i] == self.board[2][i] == self.board[3][i] != '':
